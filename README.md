@@ -4,8 +4,6 @@
 
 O Cosmo é um gerenciador de biblioteca especializado em projetos de engenharia reversa (recomps) e ports. Ele centraliza o catálogo do Recompendium (e de quantos catálogos extras você quiser), monitora novidades, gerencia seus jogos instalados e rastreia conquistas, com um palco 3D de consoles e um visual espacial.
 
-> **Origem:** o Cosmo é um fork do **Cartucho**, de **Jardel Mateus Dias de Oliveira** (licença MIT, desenvolvimento original encerrado em outubro de 2025). O aviso de copyright original está em `LICENSE.txt`.
-
 ## 📥 Baixar
 
 Pegue o instalador mais recente (`Cosmo-x.y.z-windows.exe`) na página de **[Releases](https://github.com/jardel-mateus/cosmo/releases/latest)**. O Windows pode avisar que o app não é assinado: clique em *Mais informações › Executar assim mesmo*.
@@ -18,11 +16,7 @@ O Cosmo é gratuito. Se ele te ajudou, considere uma doação por **Pix**:
 - Dentro do app: menu **☰ › Apoie o Cosmo** mostra o QR code e o botão **Pix copia e cola**.
 - Também ajuda: dar uma ⭐ no repositório e [abrir uma issue](https://github.com/jardel-mateus/cosmo/issues/new) com jogo faltando, capa errada ou sugestão.
 
-## ✨ O que mudou em relação ao Cartucho
 
-- **Nova identidade:** nome, ícone, abertura (planeta com anel), paletas *Cosmo*, *Aurora* e *Nebulosa*, fontes modernas (Rubik + Nunito). O filtro CRT continua disponível nas configurações, só vem desligado.
-- **Mais fontes de capas:** LaunchBox → **Libretro Thumbnails** (acervo do RetroArch, via GitHub) → **Steam** (agora para todas as plataformas, não só PC). Se uma fonte estiver fora do ar, a capa é tentada de novo depois em vez de ficar marcada como "sem capa".
-- **Mais fontes de jogos:** arquivo `fontes.json` na pasta de dados (botão **Fontes de jogos** no Radar). Aceita URLs ou arquivos locais no formato do Recompendium; os jogos aparecem junto com o catálogo principal.
 - **Atualização automática pelo repositório do Cosmo:** o app procura versões novas em [jardel-mateus/cosmo/releases](https://github.com/jardel-mateus/cosmo/releases). Links de apoio, estrela e issues ficam em `src/shared/links.ts`.
 
 ### Catálogos extras (`fontes.json`)
@@ -135,9 +129,9 @@ src/
 
 ## 📜 Créditos e Licença
 
-- **Projeto original (Cartucho):** Jardel Mateus Dias de Oliveira — desenvolvimento e arquitetura.
+- **Projeto original:** Jardel Mateus Dias de Oliveira — desenvolvimento e arquitetura.
 - **Modelos 3D:** Diversos autores (consultar `src/renderer/public/models/CREDITOS.md` para licenças NC — uso não comercial).
 - **Dados:** Recompendium, LaunchBox Games Database, libretro-thumbnails e Steam.
-- **Inspirações:** Lógica de acompanhamento baseada no projeto Harbour (MIT-0).
+- **Inspirações:**.
 
-**Licença:** Este código é distribuído sob a licença **MIT**.
+**Licença:** Este código é distribuído sob a licença
