@@ -1,0 +1,10 @@
+{
+ "_leia": "Entradas escritas à mão para o índice de conquistas (completam ou corrigem a varredura automática). Caminhos aceitam {jogo}, {appdata}, {localappdata}, {documentos}, {publico}, {usuario}, {jogos_salvos} e * num trecho. Formatos: auto, hedge, linhas, jsonl, json, ini, tenoke, goldberg, earned. Veja docs/conquistas.md.",
+ "jogos": [
+  {
+   "repos": ["miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp"],
+   "desbloqueios": [{ "caminho": "{jogos_salvos}/Resistance Fall of Man/trophies.json", "formato": "auto" }],
+   "nota": "O próprio projeto espelha os troféus em Saved Games (comentário no código)."
+  }
+ ]
+}

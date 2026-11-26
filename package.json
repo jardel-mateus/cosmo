@@ -1,0 +1,121 @@
+{
+  "name": "cosmo",
+  "productName": "Cosmo",
+  "version": "2.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "description": "Cosmo: hub de recomps, ports e emuladores com palco 3D, hub por console, tempo de jogo e conquistas.",
+  "author": "Cosmo",
+  "desktopName": "cosmo.desktop",
+  "license": "MIT",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "postinstall": "install-electron",
+    "dist": "electron-vite build && electron-builder --win --publish never",
+    "dist:linux": "electron-vite build && electron-builder --linux --publish never",
+    "release": "electron-vite build && electron-builder --win --publish always",
+    "release:linux": "electron-vite build && electron-builder --linux --publish always"
+  },
+  "dependencies": {
+    "@fontsource/nunito": "^5.3.0",
+    "@fontsource/press-start-2p": "^5.3.0",
+    "@fontsource/rubik": "^5.3.0",
+    "@fontsource/vt323": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "@tanstack/react-query": "^5.108.1",
+    "@trpc/client": "^11.29.5",
+    "@trpc/server": "^11.29.5",
+    "@trpc/tanstack-react-query": "^11.29.5",
+    "dbus-next": "^0.10.2",
+    "electron-trpc": "^1.0.0",
+    "electron-updater": "^6.8.11",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "superjson": "^2.2.6",
+    "three": "^0.187.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "electron": "^45.4.1",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  },
+  "build": {
+    "appId": "app.cosmo",
+    "productName": "Cosmo",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "!out/renderer/models/playstation_2.glb",
+      "!out/renderer/models/a_playstation_2_slim.glb",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "build/icon.png",
+      "category": "Game",
+      "syncDesktopName": true,
+      "synopsis": "Hub de recomps, ports e emuladores",
+      "artifactName": "Cosmo-${version}-linux.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Cosmo",
+      "include": "build/installer.nsh",
+      "artifactName": "Cosmo-${version}-windows.${ext}",
+      "differentialPackage": false
+    },
+    "extraResources": [
+      {
+        "from": "build/icon.ico",
+        "to": "icon.ico"
+      },
+      {
+        "from": "build/icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "jardel-mateus",
+        "repo": "cosmo",
+        "releaseType": "draft"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jardel-mateus/cosmo.git"
+  }
+}

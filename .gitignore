@@ -1,0 +1,14 @@
+node_modules/
+out/
+release/
+*.log
+.DS_Store
+*.tsbuildinfo
+_to_delete/
+
+# Modelos 3D cuja licença não permite redistribuir o arquivo (ficam só na sua pasta; veja models/CREDITOS.md)
+src/renderer/public/models/a_playstation_2_slim.glb
+src/renderer/public/models/playstation_2.glb
+
+# Workflows do GitHub Actions (enviar à parte: exigem permissão "workflow")
+.github/workflows/

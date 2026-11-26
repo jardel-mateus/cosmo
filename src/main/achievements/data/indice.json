@@ -1,0 +1,321 @@
+{
+ "formato": 1,
+ "gerado": "2026-11-24T00:12:46.022Z",
+ "jogos": [
+  {
+   "repos": [
+    "arcanite24/pinyon-shift"
+   ],
+   "procurar": [
+    ".achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "ayozetr/bloodborne_linux"
+   ],
+   "procurar": [
+    "trophies.jsonl"
+   ]
+  },
+  {
+   "repos": [
+    "ChunchunQ/fifa09-recomp"
+   ],
+   "procurar": [
+    "achievements.json"
+   ]
+  },
+  {
+   "repos": [
+    "Claudio5702/Cristalis"
+   ],
+   "procurar": [
+    "achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "deadinside28/bloodborne_pc"
+   ],
+   "procurar": [
+    "trophies.jsonl"
+   ]
+  },
+  {
+   "repos": [
+    "fabioap-cpu/Burnout-Revenge-Recomp"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "fabioap-cpu/Forza-Horizon-2-Recomp"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "Fable2Recomp/Fable2Recomp"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "FelipePrado0/SpartanPort"
+   ],
+   "nota": "formato binário: trophies.dat"
+  },
+  {
+   "repos": [
+    "freefrank/LostOdysseyRecomp"
+   ],
+   "procurar": [
+    "achievements.ini"
+   ]
+  },
+  {
+   "repos": [
+    "Gabrick75/fh2-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "GetLostIn/CTR-NitroFueled-PC"
+   ],
+   "procurar": [
+    "trophies.tsv"
+   ]
+  },
+  {
+   "repos": [
+    "HayatoG/iss_pc"
+   ],
+   "procurar": [
+    "earned.json"
+   ]
+  },
+  {
+   "repos": [
+    "hedge-dev/UnleashedRecomp"
+   ],
+   "procurar": [
+    "ach-data"
+   ]
+  },
+  {
+   "repos": [
+    "iMrBurn/wwe12-pc"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "invinceble55-wq/Estacado-The-Darkness-Recomp"
+   ],
+   "procurar": [
+    "achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "madelrandel-blip/NFSMW-Recompiled"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "Maxilure/MindOver-Recomp"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp"
+   ],
+   "desbloqueios": [
+    {
+     "caminho": "{jogos_salvos}/Resistance Fall of Man/trophies.json",
+     "formato": "auto"
+    }
+   ],
+   "nota": "O próprio projeto espelha os troféus em Saved Games (comentário no código)."
+  },
+  {
+   "repos": [
+    "mzzvxm/LARecomp"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "PauloUbirajara/asuras-wrath-recomp"
+   ],
+   "procurar": [
+    "achievements.tsv"
+   ]
+  },
+  {
+   "repos": [
+    "portingpete/The-Darkness-Recomp"
+   ],
+   "nota": "formato binário: achievements.dat"
+  },
+  {
+   "repos": [
+    "Ryu7w7/OCTR-NitroFueled-PC"
+   ],
+   "procurar": [
+    "trophies.tsv"
+   ]
+  },
+  {
+   "repos": [
+    "saulob/crackdown-xbox360-recompiled"
+   ],
+   "nota": "formato binário: achievements.bin"
+  },
+  {
+   "repos": [
+    "saulob/dragons-crown-pro-pc"
+   ],
+   "nota": "formato binário: trophy_key.bin"
+  },
+  {
+   "repos": [
+    "saulob/odin-sphere-leifthrasir-pc"
+   ],
+   "procurar": [
+    "trophies.tsv"
+   ]
+  },
+  {
+   "repos": [
+    "sonicnext-dev/MarathonRecomp"
+   ],
+   "nota": "formato binário: sonicnextachievementdata.bin"
+  },
+  {
+   "repos": [
+    "SuperCatElvis/UntilDawn_PC"
+   ],
+   "nota": "formato binário: trophies.bin"
+  },
+  {
+   "repos": [
+    "techknight/geow2"
+   ],
+   "procurar": [
+    "achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/earthworm-jim-hd-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml",
+    "port_achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/king-kong-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml",
+    "port_achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/outpost-kaloki-x-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml",
+    "port_achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/south-park-tenormans-revenge-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml",
+    "port_achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/south-park-tower-defense-recompiled"
+   ],
+   "procurar": [
+    "achievements.toml",
+    "port_achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "TekRantGaming/whopping-recompilation-collection"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "testdriveupgrade/TDURecomp"
+   ],
+   "procurar": [
+    "ach-data"
+   ]
+  },
+  {
+   "repos": [
+    "vascon-es/lego-dimensions-pc"
+   ],
+   "nota": "formato binário: trophies.dat"
+  },
+  {
+   "repos": [
+    "VitoMiguelF/crashott-pc"
+   ],
+   "procurar": [
+    "achievements.toml"
+   ]
+  },
+  {
+   "repos": [
+    "YesterMester/TheSimpsonsGameRecomp"
+   ],
+   "procurar": [
+    "achievements.txt"
+   ]
+  },
+  {
+   "repos": [
+    "YuutaTsubasa/Free-Riders-Recompiled"
+   ],
+   "procurar": [
+    "achievements.txt"
+   ]
+  }
+ ]
+}

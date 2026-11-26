@@ -1,0 +1,97 @@
+/* ===================================================================
+   COSMO SKIN — identidade única para todos os hubs de console.
+   Ativa com #tv.cosmo-skin (Configurações › Visual › Visual dos consoles).
+   Sem a classe, cada hub volta ao visual clássico do seu console.
+   =================================================================== */
+#tv.cosmo-skin {
+  --cz-space:
+    radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.7), transparent 60%),
+    radial-gradient(1px 1px at 78% 12%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(1.5px 1.5px at 64% 72%, rgba(255,255,255,.6), transparent 60%),
+    radial-gradient(1px 1px at 30% 84%, rgba(255,255,255,.5), transparent 60%),
+    radial-gradient(1.5px 1.5px at 90% 48%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(1px 1px at 46% 36%, rgba(255,255,255,.35), transparent 60%),
+    radial-gradient(1100px 700px at 88% -8%, rgb(var(--cyan-rgb) / .22), transparent 62%),
+    radial-gradient(900px 640px at -6% 108%, rgb(var(--acc-rgb) / .16), transparent 62%),
+    radial-gradient(700px 420px at 55% 125%, rgb(var(--pink-rgb) / .10), transparent 70%),
+    linear-gradient(170deg, var(--bg2), var(--bg0));
+  --cz-body: 'Rubik', 'Segoe UI', sans-serif; --cz-head: 'Rubik', 'Segoe UI', sans-serif;
+  --cz-glass: rgb(var(--panel-rgb) / .62);
+  --cz-glass-line: 1px solid rgb(var(--acc-rgb) / .22);
+  --cz-shadow: 0 24px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
+  --cz-grad: linear-gradient(135deg, var(--acc), color-mix(in srgb, var(--acc) 50%, var(--cyan)));
+}
+
+/* ---------- Fonte única em todos os hubs ---------- */
+#tv.cosmo-skin .hub, #tv.cosmo-skin .hub button, #tv.cosmo-skin .dsc, #tv.cosmo-skin .dsc button { font-family: var(--cz-body); }
+#tv.cosmo-skin .hub :is(h1, h2, h3, .rh-name), #tv.cosmo-skin .dsc :is(h2, h3) { font-family: var(--cz-head); font-weight: 600; letter-spacing: .01em; }
+#tv.cosmo-skin .hub, #tv.cosmo-skin .dsc { --sf: var(--cz-body); --toast-bg: rgb(var(--panel-rgb) / .95); --toast-fg: var(--ink); }
+#tv.cosmo-skin .stoast { border: var(--cz-glass-line); backdrop-filter: blur(12px); }
+
+/* ---------- Fundo espacial nos hubs escuros ---------- */
+#tv.cosmo-skin :is(.sk-rt, .sk-p5, .sk-p4, .sk-p3, .sk-x3, .sk-pc) { background: var(--bg0); }
+#tv.cosmo-skin :is(.p5, .p4, .p3, .x3, .pc) { background: var(--cz-space); color: var(--ink); }
+#tv.cosmo-skin .p4-rib, #tv.cosmo-skin .x3-bg { opacity: .25; mix-blend-mode: screen; filter: hue-rotate(140deg) saturate(.7); }
+#tv.cosmo-skin .p5-art img { opacity: .55; -webkit-mask: linear-gradient(90deg, transparent, #000 45%); mask: linear-gradient(90deg, transparent, #000 45%); }
+#tv.cosmo-skin .p4 { --hl: var(--acc); }
+#tv.cosmo-skin .pc { --mut: var(--dim); --line: var(--line); --card: rgb(var(--panel-rgb) / .7); }
+#tv.cosmo-skin :is(.x3, .s2, .wi) { --ac: var(--acc); }
+
+/* ---------- Retrô (SNES, NES, N64, PS1, PS2, GameCube, Game Boy, Mega Drive, DS, Outros) ---------- */
+#tv.cosmo-skin .rt {
+  --wf: var(--cz-head); --wfw: 600; --tf: var(--cz-body); --tfw: 700;
+  --wc: var(--ink); --name-c: var(--ink); --name-sh: none; --hi-c: var(--acc2);
+  --fs-name: 50px; --fs-tab: 25px; --fs-t: 24px; --tab-px: 22px; --wr: 18px;
+  --rbg: var(--cz-space); --rsolid: var(--bg);
+  --wbg: var(--cz-glass); --wbd: var(--cz-glass-line); --wsh: var(--cz-shadow);
+  --tab-on: var(--cz-grad); --tab-on-c: var(--on-acc); --acc2: var(--acc); --tab-sh: 0 8px 24px rgb(var(--acc-rgb) / .35);
+  --d-h2: 46px; --d-h3: 22px;
+}
+#tv.cosmo-skin .rt .rw { backdrop-filter: blur(14px); }
+#tv.cosmo-skin .rh-tabs button { border-radius: 999px; }
+#tv.cosmo-skin .rh-tabs button:not(.on):hover { opacity: 1; background: rgb(var(--panel-rgb) / .6); }
+#tv.cosmo-skin .rg-it .lbl { border-radius: 12px; }
+#tv.cosmo-skin .rg-it.on .obj { filter: drop-shadow(0 0 22px rgb(var(--acc-rgb) / .55)); }
+#tv.cosmo-skin .rg-empty button { border-radius: 999px; box-shadow: 0 10px 30px rgb(var(--acc-rgb) / .35); }
+
+/* ---------- Hubs claros (Switch e Wii): versão "amanhecer" do Cosmo ---------- */
+#tv.cosmo-skin :is(.sk-tiles2, .sk-wi) { background: var(--bg0); --sbg: #e9eefb; }
+#tv.cosmo-skin .s2 {
+  background:
+    radial-gradient(900px 600px at 90% -10%, rgb(var(--cyan-rgb) / .28), transparent 60%),
+    radial-gradient(800px 600px at -10% 110%, rgb(var(--acc-rgb) / .26), transparent 60%),
+    linear-gradient(170deg, #f4f6ff, #e6ebf8);
+  color: #1b2340;
+}
+#tv.cosmo-skin .wi {
+  background:
+    radial-gradient(900px 600px at 85% -10%, rgb(var(--cyan-rgb) / .25), transparent 60%),
+    radial-gradient(800px 600px at -10% 110%, rgb(var(--acc-rgb) / .22), transparent 60%),
+    linear-gradient(170deg, #f6f8ff, #e8edf8);
+  color: #1b2340; font-weight: 600; --mut: #66708f;
+}
+
+/* ---------- Catálogo (Descobrir / Todos os jogos) ---------- */
+#tv.cosmo-skin .dsc {
+  --d-bg: var(--bg); --d-panel: rgb(var(--panel-rgb) / .7); --d-line: rgb(var(--acc-rgb) / .18);
+  --d-ink: var(--ink); --d-dim: var(--dim); --d-acc: var(--acc); --d-on-acc: var(--on-acc);
+  --d-font: var(--cz-body); --d-title: var(--cz-head); --d-tw: 600; --d-r: 18px; --d-cr: 14px;
+  --d-focus: 0 0 0 3px var(--d-bg), 0 0 0 6px var(--d-acc), 0 18px 44px rgb(var(--acc-rgb) / .25);
+  background: var(--cz-space);
+}
+#tv.cosmo-skin .dsc-chips button.cur { background: var(--cz-grad); }
+#tv.cosmo-skin .dsc-q { backdrop-filter: blur(10px); }
+
+/* ---------- Abertura de cada hub: planeta pulsando no lugar das vinhetas dos consoles ---------- */
+#tv.cosmo-skin .hboot { background: var(--cz-space) !important; }
+#tv.cosmo-skin .hboot span {
+  font-size: 0 !important; letter-spacing: 0 !important; text-shadow: none !important;
+  width: 120px !important; height: 120px !important; border-radius: 50% !important;
+  background: radial-gradient(circle at 32% 28%, #fff 0 4%, var(--acc2) 14%, var(--acc) 45%, color-mix(in srgb, var(--cyan) 70%, #000) 100%) !important;
+  box-shadow: 0 0 0 10px rgb(var(--bg-rgb) / 1), 0 0 0 13px rgb(var(--pink-rgb) / .7), 0 0 60px rgb(var(--acc-rgb) / .6) !important;
+  animation: czBoot 1.6s cubic-bezier(.3,1.4,.5,1) forwards !important;
+}
+@keyframes czBoot { 0% { opacity: 0; transform: scale(.2); } 35%, 78% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.6); } }
+
+/* ---------- Telas gerais (configurações, menus, painéis) ---------- */
+#tv.cosmo-skin :is(.st, .ov, .hm-ov, .gl-menu) :is(button, a)[data-on] { border-radius: 12px; }

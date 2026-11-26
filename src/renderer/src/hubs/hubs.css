@@ -1,0 +1,29 @@
+/* ---------- base dos hubs ---------- */
+.hub { position: absolute; inset: 0; overflow: hidden; }
+.fit-box { position: absolute; inset: 0; overflow: hidden; }
+.fit-box > div { position: absolute; left: 50%; top: 50%; transform-origin: center; }
+.hub .ico { width: 1em; height: 1em; display: inline-block; vertical-align: -.12em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.stoast { position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); z-index: 30; background: var(--toast-bg, #fff); color: var(--toast-fg, #111); padding: 12px 22px; border-radius: 999px; font-family: var(--sf, var(--font-body)); font-size: 17px; font-weight: 600; box-shadow: 0 8px 30px rgba(0,0,0,.4); animation: toastIn .25s ease-out; max-width: 80%; text-align: center; }
+@keyframes toastIn { from { opacity: 0; transform: translate(-50%, 10px); } }
+#tv.hd::before, #tv.hd::after { display: none; }
+
+/* ligada de cada família */
+.hboot { position: absolute; inset: 0; z-index: 40; display: grid; place-items: center; pointer-events: none; animation: bootOut 2s forwards; }
+@keyframes bootOut { 0%, 75% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
+.hboot span { opacity: 0; }
+.hboot-retro { background: #000; }
+.hboot-retro span { font-family: var(--font-display); font-size: 26px; color: var(--cc); animation: pxIn 1.5s steps(6) forwards; text-shadow: 4px 4px 0 #000, 0 0 18px var(--cc); }
+@keyframes pxIn { 0% { opacity: 0; filter: blur(8px); letter-spacing: 30px; } 40%, 85% { opacity: 1; filter: none; letter-spacing: 6px; } 100% { opacity: 0; } }
+.hboot-tiles { background: var(--sbg, #e4e4e8); }
+.hboot-tiles span { width: 120px; height: 120px; border-radius: 28px; background: var(--cc); animation: popIn 1.5s cubic-bezier(.3,1.6,.5,1) forwards; }
+@keyframes popIn { 0% { opacity: 0; transform: scale(.3); } 35%, 80% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.4); } }
+.hboot-soft { background: #000; }
+.hboot-soft span { font-family: 'Saira', sans-serif; font-weight: 200; font-size: 40px; letter-spacing: 14px; color: #fff; animation: softIn 1.6s ease forwards; }
+@keyframes softIn { 0% { opacity: 0; letter-spacing: 2px; } 45%, 80% { opacity: 1; } 100% { opacity: 0; letter-spacing: 20px; } }
+.hboot-sweep { background: #050605; }
+.hboot-sweep span { width: 60%; height: 3px; background: linear-gradient(90deg, transparent, var(--cc), transparent); box-shadow: 0 0 30px var(--cc); animation: sweep 1.5s ease forwards; }
+@keyframes sweep { 0% { opacity: 0; transform: scaleX(0); } 40%, 75% { opacity: 1; transform: scaleX(1); } 100% { opacity: 0; transform: scaleX(1) scaleY(60); } }
+.hboot-white { background: #fff; }
+.hboot-white span { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 34px; color: #a8adbb; animation: softIn 1.5s ease forwards; letter-spacing: 6px; }
+@media (prefers-reduced-motion: reduce) { .hboot { display: none; } }
+#tv.reduce .hboot { display: none; }
